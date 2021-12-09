@@ -19,14 +19,16 @@ html, body {
    height: 85px;
 }
 
-.footer {
-   grid-area: f;
-   color: white;
+#profilbillede {
+   width: 225%;
+   padding-left: 40%;
+   object-fit: cover;
+   grid-area: pr;
 }
 
-.praesentation {
-   grid-area: o;
-   height: 400px;
+
+.footer {
+   grid-area: f;
    color: white;
 }
 
@@ -43,22 +45,31 @@ html, body {
   filter: brightness(0.8);
 }
 
-#projekter {
-   grid-area: p;
-   color: white;
-   height: 100%;
-   display: grid;
-   grid-gap: 90%;
-   place-items: center;
-   grid-template-columns: repeat(12, 1fr);
-   grid-template-areas:
-       "et et et et et et to to to to to to"
-       "tre tre tre tre tre tre fire fire fire fire fire fire";
-}
-
 .et {
   grid-area: et;
   color: white;
+}
+
+.praesentationsheader {
+   grid-area: prhe;
+   font-family: 'Oswald', sans-serif;
+   font-weight: bold;
+   font-size: 153%;
+   color: white;
+   padding-left: 12%;
+   padding-top: 20%;
+   color: yellow;
+}
+
+.praesentationstekst {
+   grid-area: prte;
+   font-family: 'Roboto', sans-serif;
+   font-weight: bold;
+   font-size: 60%;
+   color: white;
+   padding-left: 12%;
+   margin-bottom: 120px;
+   margin-right: 60px;
 }
 
 .to {
@@ -121,6 +132,32 @@ a.one:hover {
           "a a a a a a a a a a a a"
           "c c c c c c c c c c c c"
           "f f f f f f f f f f f f";
+  }
+
+  #projekter {
+     grid-area: p;
+     color: white;
+     height: 100%;
+     display: grid;
+     grid-gap: 90%;
+     place-items: center;
+     grid-template-columns: repeat(12, 1fr);
+     grid-template-areas:
+         "et et et et et et to to to to to to"
+         "tre tre tre tre tre tre fire fire fire fire fire fire";
+  }
+
+  #praesentation {
+     grid-area: o;
+     height: 500px;
+     color: white;
+     display: grid;
+     grid-gap: 0%;
+     place-items: center;
+     grid-template-columns: repeat(12, 1fr);
+     grid-template-areas:
+         "pr pr pr pr pr pr prhe prhe prhe prhe prhe prhe"
+         "pr pr pr pr pr pr prte prte prte prte prte prte";
   }
 }
 
