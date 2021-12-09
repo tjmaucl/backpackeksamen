@@ -1,27 +1,45 @@
 html, body {
-  background-color: white;
+  font-style:
   max-width: 1920px;
   margin: auto;
 }
 
 .header {
+   height: 100px;
+   font-family: 'Oswald', sans-serif;
+   font-weight: bold;
    grid-area: h;
+   background-color: #232323;
+   color: white;
 }
 
 .logo {
+   font-family: 'Oswald', sans-serif;
+   font-weight: Medium;
    grid-area: m;
+   height: 100px;
+   background-color: #232323;
+   color: white;
 }
 
 .footer {
    grid-area: f;
+   background-color: #232323;
+   color: white;
 }
 
 .praesentation {
    grid-area: o;
+   height: 400px;
+   background-color: #232323;
+   color: white;
 }
 
 .burgermenu {
    grid-area: j;
+   height: 100px;
+   background-color: #232323;
+   color: white;
 }
 
 #myVideo {
@@ -33,18 +51,27 @@ html, body {
 
 .projekter {
    grid-area: p;
+   background-color: #232323;
+   color: white;
 }
 
 .projekter {
    grid-area: p;
+   background-color: #232323;
+   color: white;
 }
 
 .anbefaldinger {
    grid-area: a;
+   height: 200px;
+   background-color: #232323;
+   color: white;
 }
 
 .calltoaction {
    grid-area: c;
+   background-color: #232323;
+   color: white;
 }
 
 a.one:link {color: blue; text-decoration:none;}
@@ -59,41 +86,41 @@ a.one:hover {
       justify-content: center;
       align-items: center;
       font-size: 2em;
-      color: black;
-      background-color: grey;
-  }
-
-  html, body {
-    background-color: white;
   }
 
   .container {
       height: 100%;
       display: grid;
-      grid-gap: 3px;
+      grid-gap: 0px;
       grid-template-columns: repeat(12, 1fr);
-      grid-template-rows: 40px auto 40px;
       grid-template-areas:
-          "h h h h h h h h h h h h"
+          "m m m h h h h h h j j j"
+          "m m m h h h h h h j j j"
           "hv hv hv hv hv hv hv hv hv hv hv hv"
-          "m m m m m m m m m m m m"
           "o o o o o o o o o o o o"
           "p p p p p p p p p p p p"
           "a a a a a a a a a a a a"
           "c c c c c c c c c c c c"
-          "j j j j j j j j j j j j"
           "f f f f f f f f f f f f";
   }
+}
 
-@media only screen and (min-width: 550px) {
+@media only screen and (min-width: 650px) {
+   .container > div {
+       display: flex;
+       justify-content: center;
+       align-items: center;
+       font-size: 2em;
+       color: black;
+       background-color: green;
+     }
+
     .container {
        height: 100%;
        display: grid;
-       grid-gap: 3px;
        grid-template-columns: repeat(12, 1fr);
-       grid-template-rows: 40px auto 40px;
        grid-template-areas:
-       "h h h m m m m m m j j j"
+       "m m m h h h h h h j j j"
        "hv hv hv hv hv hv hv hv hv hv hv hv"
        "o o o o o o o o o o o o"
        "p p p p p p p p p p p p"
