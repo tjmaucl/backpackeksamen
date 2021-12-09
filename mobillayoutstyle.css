@@ -2,6 +2,7 @@ html, body {
   font-style:
   max-width: 1920px;
   margin: auto;
+  background-color: #232323;
 }
 
 .header {
@@ -9,36 +10,29 @@ html, body {
    font-family: 'Oswald', sans-serif;
    font-weight: bold;
    grid-area: h;
-   background-color: #232323;
    color: white;
 }
 
-.logo {
-   font-family: 'Oswald', sans-serif;
-   font-weight: Medium;
+#logo {
+   margin: auto;
    grid-area: m;
-   height: 100px;
-   background-color: #232323;
-   color: white;
+   height: 85px;
 }
 
 .footer {
    grid-area: f;
-   background-color: #232323;
    color: white;
 }
 
 .praesentation {
    grid-area: o;
    height: 400px;
-   background-color: #232323;
    color: white;
 }
 
 .burgermenu {
    grid-area: j;
    height: 100px;
-   background-color: #232323;
    color: white;
 }
 
@@ -49,28 +43,52 @@ html, body {
   filter: brightness(0.8);
 }
 
-.projekter {
+#projekter {
    grid-area: p;
-   background-color: #232323;
+   color: white;
+   height: 100%;
+   display: grid;
+   grid-gap: 90%;
+   place-items: center;
+   grid-template-columns: repeat(12, 1fr);
+   grid-template-areas:
+       "et et et et et et to to to to to to"
+       "tre tre tre tre tre tre fire fire fire fire fire fire";
+}
+
+.et {
+  grid-area: et;
+  color: white;
+}
+
+.to {
+   grid-area: to;
+   color: white;
+}
+
+.tre {
+   grid-area: tre;
+   color: white;
+}
+
+.fire {
+   grid-area: fire;
    color: white;
 }
 
 .projekter {
    grid-area: p;
-   background-color: #232323;
    color: white;
 }
 
 .anbefaldinger {
    grid-area: a;
    height: 200px;
-   background-color: #232323;
    color: white;
 }
 
 .calltoaction {
    grid-area: c;
-   background-color: #232323;
    color: white;
 }
 
@@ -92,6 +110,7 @@ a.one:hover {
       height: 100%;
       display: grid;
       grid-gap: 0px;
+      place-items: center;
       grid-template-columns: repeat(12, 1fr);
       grid-template-areas:
           "m m m h h h h h h j j j"
@@ -111,13 +130,15 @@ a.one:hover {
        justify-content: center;
        align-items: center;
        font-size: 2em;
-       color: black;
-       background-color: green;
+       color: purple;
+       background-color: #232323;
      }
 
     .container {
        height: 100%;
        display: grid;
+       grid-gap: 2px;
+       place-items: center;
        grid-template-columns: repeat(12, 1fr);
        grid-template-areas:
        "m m m h h h h h h j j j"
