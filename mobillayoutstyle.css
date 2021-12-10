@@ -11,6 +11,16 @@ html, body {
    font-weight: bold;
    grid-area: h;
    color: white;
+   height: 80px;
+}
+
+.navigation {
+  grid-area: nav;
+  grid-gap: 12%;
+  white-space: nowrap;
+  font-family: 'Oswald', sans-serif;
+  font-weight: normal;
+  color: white;
 }
 
 #logo {
@@ -43,11 +53,14 @@ html, body {
   max-width: 100%;
   height: auto;
   filter: brightness(0.8);
+  margin-bottom: 5%;
 }
 
-.et {
+#mitur {
   grid-area: et;
-  color: white;
+  object-fit: cover;
+  width: 100%;
+  max-height: 100%;
 }
 
 .praesentationsheader {
@@ -55,10 +68,9 @@ html, body {
    font-family: 'Oswald', sans-serif;
    font-weight: bold;
    font-size: 153%;
-   color: white;
    padding-left: 12%;
    padding-top: 20%;
-   color: yellow;
+   color: #F2CB05;
 }
 
 .praesentationstekst {
@@ -66,15 +78,20 @@ html, body {
    font-family: 'Roboto', sans-serif;
    font-weight: bold;
    font-size: 60%;
-   color: white;
+   color: #f2f2f2;
    padding-left: 12%;
    margin-bottom: 120px;
    margin-right: 60px;
 }
 
+.et {
+   grid-area: et;
+    color: white;
+}
+
 .to {
    grid-area: to;
-   color: white;
+    color: white;
 }
 
 .tre {
@@ -87,15 +104,10 @@ html, body {
    color: white;
 }
 
-.projekter {
-   grid-area: p;
-   color: white;
-}
-
 .anbefaldinger {
    grid-area: a;
    height: 200px;
-   color: white;
+   color: #f2f2f2;
 }
 
 .calltoaction {
@@ -118,7 +130,7 @@ a.one:hover {
   }
 
   .container {
-      height: 100%;
+      height: auto;
       display: grid;
       grid-gap: 0px;
       place-items: center;
@@ -127,6 +139,7 @@ a.one:hover {
           "m m m h h h h h h j j j"
           "m m m h h h h h h j j j"
           "hv hv hv hv hv hv hv hv hv hv hv hv"
+          "nav nav nav nav nav nav nav nav nav nav nav nav"
           "o o o o o o o o o o o o"
           "p p p p p p p p p p p p"
           "a a a a a a a a a a a a"
@@ -135,21 +148,24 @@ a.one:hover {
   }
 
   #projekter {
-     grid-area: p;
-     color: white;
-     height: 100%;
-     display: grid;
-     grid-gap: 90%;
-     place-items: center;
-     grid-template-columns: repeat(12, 1fr);
-     grid-template-areas:
-         "et et et et et et to to to to to to"
-         "tre tre tre tre tre tre fire fire fire fire fire fire";
+    grid-area: p;
+    height: auto;
+    color: white;
+    display: grid;
+    grid-gap: 0%;
+    align-items: center;
+    justify-content: center;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-areas:
+        "et et et et et et et et et et et et"
+        "to to to to to to to to to to to to"
+        "tre tre tre tre tre tre tre tre tre tre tre tre"
+        "fire fire fire fire fire fire fire fire fire fire fire fire";
   }
 
   #praesentation {
      grid-area: o;
-     height: 500px;
+     height: auto;
      color: white;
      display: grid;
      grid-gap: 0%;
@@ -186,4 +202,18 @@ a.one:hover {
        "c c c c c c c c c c c c"
        "f f f f f f f f f f f f";
  }
+//*
+ .projekter {
+    grid-area: p;
+    color: white;
+    height: 200%;
+    display: grid;
+    grid-gap: 35%;
+    place-items: center;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-areas:
+        "et et et et et et to to to to to to"
+        "tre tre tre tre tre tre fire fire fire fire fire fire";
+ }
+ //*/
 }
