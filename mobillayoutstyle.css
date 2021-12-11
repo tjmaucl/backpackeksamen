@@ -17,7 +17,6 @@ color: white;
      grid-area: h;
      color: white;
      height: 80px;
-     padding-bottom: 5px;
   }
 
   .navigation {
@@ -44,16 +43,27 @@ color: white;
      width: 80px;
   }
 
+  #logofooter {
+     margin: auto;
+     height: 80px;
+     width: 80px;
+  }
+
+  .logofooterlink {
+    margin: auto;
+    grid-area: lofo;
+    height: 80px;
+    width: 80px;
+    align-content: center;
+    justify-content: center;
+  }
+
   #profilbillede {
      width: 225%;
      padding-left: 40%;
      object-fit: cover;
      grid-area: pr;
-  }
-
-  .footer {
-     grid-area: f;
-     color: white;
+     margin-top: 12%;
   }
 
   #myVideo {
@@ -92,6 +102,11 @@ color: white;
       color: white;
   }
 
+  .fotogalleri:hover {
+    opacity: 0.3;
+  }
+
+
   .videoprojekt {
      grid-area: to;
       color: white;
@@ -124,6 +139,34 @@ color: white;
      color: white;
   }
 
+  .footera {
+    grid-area: foa;
+    font-family:
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+  }
+
+  .footerb {
+    grid-area: fob;
+    width: 100%;
+  }
+
+  #footer {
+    grid-area: foot;
+    display: grid;
+    color: white;
+    width: 100%;
+    background-color: black;
+    font-family: 'Roboto', sans-serif;
+    font-size: 22px;
+    height: auto;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-areas:
+        "foa . . . . lofo lofo . . . . ."
+        "fob . . . . lofo lofo . . . . ."
+  }
+
   #projekter {
     grid-area: p;
     height: auto;
@@ -140,17 +183,18 @@ color: white;
         "fire fire fire fire fire fire fire fire fire fire fire";
   }
 
-  a.one:link {color: blue; text-decoration:none;}
-  a.one:hover {
-    text-decoration:underline;
-    color: darkblue;
-  }
-
   .container > div {
       display: flex;
       justify-content: center;
       align-items: center;
       font-size: 2em;
+  }
+
+  .container > a {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          font-size: 2em;
   }
 
   .container {
@@ -167,7 +211,7 @@ color: white;
           "p p p p p p p p p p p p"
           "a a a a a a a a a a a a"
           "c c c c c c c c c c c c"
-          "f f f f f f f f f f f f";
+          "foot foot foot foot foot foot foot foot foot foot foot foot";
   }
 
   #projekter {
@@ -190,7 +234,9 @@ color: white;
      height: auto;
      color: white;
      display: grid;
+     height: 100%;
      grid-gap: 0%;
+     margin-top: -20%;
      place-items: center;
      grid-template-columns: repeat(12, 1fr);
      grid-template-areas:
@@ -220,7 +266,6 @@ color: white;
        "hv hv hv hv hv hv hv hv hv hv hv hv"
        "o o o o o o o o o o o o"
        "p p p p p p p p p p p p"
-       "a a a a a a a a a a a a"
        "c c c c c c c c c c c c"
        "f f f f f f f f f f f f";
  }
