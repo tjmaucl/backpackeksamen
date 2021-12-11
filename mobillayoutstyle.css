@@ -125,11 +125,11 @@ color: white;
     filter: blur(6px);
   }
 
-  .neonskilt {
+  .neon {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
      color: white;
-     width: 100%;
-     height: auto;
-     object-fit: cover;
   }
 
   .neonskiltbox {
@@ -145,28 +145,32 @@ color: white;
      color: white;
   }
 
-  .anbefaldinger {
-     grid-area: a;
-     height: 200px;
-     color: #f2f2f2;
+  .ctaheader {
+     grid-area: ctahead;
   }
 
-  .calltoaction {
-     grid-area: c;
-     color: white;
+  .ctaparagraf {
+    grid-area: ctapara;
+  }
+
+  .calltoactionknap {
+    grid-area: ctabutt;
   }
 
   .footera {
     grid-area: foa;
-    font-family:
-    width: 100%;
-    height: auto;
-    object-fit: cover;
+    padding-left: 6%;
+    padding-top: 4%;
   }
 
   .footerb {
     grid-area: fob;
-    width: 100%;
+    padding-left: 6%;
+  }
+
+  .linkedintekst {
+    grid-area: linkdin;
+    padding-left: 6%;
   }
 
   #footer {
@@ -176,28 +180,15 @@ color: white;
     width: 100%;
     background-color: black;
     font-family: 'Roboto', sans-serif;
-    font-size: 22px;
+    font-size: 12px;
     height: auto;
     grid-template-columns: repeat(12, 1fr);
     grid-template-areas:
-        "foa . . . . lofo lofo . . . . ."
-        "fob . . . . lofo lofo . . . . ."
-  }
-
-  #projekter {
-    grid-area: p;
-    height: auto;
-    color: white;
-    display: grid;
-    grid-gap: 0%;
-    align-items: center;
-    justify-content: center;
-    grid-template-columns: repeat(12, 1fr);
-    grid-template-areas:
-        "et et et et et et et et et et et et"
-        "to to to to to to to to to to to to"
-        "tre tre tre tre tre tre tre tre tre tre tre tre"
-        "fire fire fire fire fire fire fire fire fire fire fire";
+        ". . . . . lofo lofo . . . . ."
+        "foa foa foa foa foa lofo lofo . . . . ."
+        "fob fob fob fob fob lofo lofo . . . . ."
+        "linkdin linkdin linkdin linkdin linkdin lofo lofo . . . . ."
+        ". . . . . lofo lofo . . . . ."
   }
 
   .container > div {
@@ -226,9 +217,23 @@ color: white;
           "nav nav nav nav nav nav nav nav nav nav nav nav"
           "o o o o o o o o o o o o"
           "p p p p p p p p p p p p"
-          "a a a a a a a a a a a a"
           "c c c c c c c c c c c c"
           "foot foot foot foot foot foot foot foot foot foot foot foot";
+  }
+
+  #ctatekst {
+     grid-area: c;
+     height: auto;
+     color: white;
+     display: grid;
+     height: 100%;
+     grid-gap: 0%;;
+     place-items: center;
+     grid-template-columns: repeat(12, 1fr);
+     grid-template-areas:
+         ". ctahead ctahead ctahead ctahead ctahead ctahead ctahead ctahead ctahead ctahead ."
+         ". ctapara ctapara ctapara ctapara ctapara ctapara ctapara ctapara ctapara ctapara ."
+         ". . . ctabutt ctabutt ctabutt ctabutt ctabutt ctabutt . . .";
   }
 
   #projekter {
