@@ -71,6 +71,7 @@ color: white;
     max-width: 100%;
     height: auto;
     filter: brightness(0.8);
+
   }
 
   .praesentationsheader {
@@ -95,33 +96,49 @@ color: white;
   }
 
   .fotogalleri {
-     grid-area: et;
-     width: 100%;
-     height: auto;
-     object-fit: cover;
-      color: white;
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+     color: white;
+  }
+
+  .fotogalleribox {
+    grid-area: et;
   }
 
   .fotogalleri:hover {
-    opacity: 0.3;
+    filter: blur(6px);
   }
 
-
   .videoprojekt {
-     grid-area: to;
-      color: white;
       width: 100%;
+      color: white;
       height: auto;
       object-fit: cover;
   }
 
+  .videoprojektbox {
+      grid-area: to;
+  }
+
+  .videoprojektbox:hover {
+    filter: blur(6px);
+  }
+
   .neonskilt {
-     grid-area: tre;
      color: white;
      width: 100%;
      height: auto;
      object-fit: cover;
   }
+
+  .neonskiltbox {
+     grid-area: tre;
+  }
+
+  .neonskiltbox:hover {
+    filter: blur(6px);
+ }
 
   .fire {
      grid-area: fire;
