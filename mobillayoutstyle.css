@@ -12,21 +12,31 @@ html, body {
    grid-area: h;
    color: white;
    height: 80px;
+   padding-bottom: 5px;
 }
 
 .navigation {
+  position: sticky;
+  top: 0;
+  max-width: 100%;
+  width: 100%;
+  height: auto;
   grid-area: nav;
-  grid-gap: 12%;
+  grid-gap: 8%;
   white-space: nowrap;
   font-family: 'Oswald', sans-serif;
   font-weight: normal;
   color: white;
+  background-color: #111111;
+  padding-top: 4%;
+  padding-bottom: 4%;
 }
 
 #logo {
    margin: auto;
    grid-area: m;
-   height: 85px;
+   height: 80px;
+   width: 80px;
 }
 
 #profilbillede {
@@ -36,15 +46,8 @@ html, body {
    grid-area: pr;
 }
 
-
 .footer {
    grid-area: f;
-   color: white;
-}
-
-.burgermenu {
-   grid-area: j;
-   height: 100px;
    color: white;
 }
 
@@ -53,14 +56,6 @@ html, body {
   max-width: 100%;
   height: auto;
   filter: brightness(0.8);
-  margin-bottom: 5%;
-}
-
-#mitur {
-  grid-area: et;
-  object-fit: cover;
-  width: 100%;
-  max-height: 100%;
 }
 
 .praesentationsheader {
@@ -86,6 +81,9 @@ html, body {
 
 .et {
    grid-area: et;
+   width: 100%;
+   height: 100%;
+   object-fit: cover;
     color: white;
 }
 
@@ -115,6 +113,22 @@ html, body {
    color: white;
 }
 
+#projekter {
+  grid-area: p;
+  height: auto;
+  color: white;
+  display: grid;
+  grid-gap: 0%;
+  align-items: center;
+  justify-content: center;
+  grid-template-columns: repeat(12, 1fr);
+  grid-template-areas:
+      "et et et et et et et et et et et et"
+      "to to to to to to to to to to to to"
+      "tre tre tre tre tre tre tre tre tre tre tre tre"
+      "fire fire fire fire fire fire fire fire fire fire fire";
+}
+
 a.one:link {color: blue; text-decoration:none;}
 a.one:hover {
   text-decoration:underline;
@@ -136,8 +150,7 @@ a.one:hover {
       place-items: center;
       grid-template-columns: repeat(12, 1fr);
       grid-template-areas:
-          "m m m h h h h h h j j j"
-          "m m m h h h h h h j j j"
+          ". m m . . h h . . . . ."
           "hv hv hv hv hv hv hv hv hv hv hv hv"
           "nav nav nav nav nav nav nav nav nav nav nav nav"
           "o o o o o o o o o o o o"
@@ -148,19 +161,18 @@ a.one:hover {
   }
 
   #projekter {
-    grid-area: p;
-    height: auto;
-    color: white;
-    display: grid;
-    grid-gap: 0%;
-    align-items: center;
-    justify-content: center;
-    grid-template-columns: repeat(12, 1fr);
-    grid-template-areas:
-        "et et et et et et et et et et et et"
-        "to to to to to to to to to to to to"
-        "tre tre tre tre tre tre tre tre tre tre tre tre"
-        "fire fire fire fire fire fire fire fire fire fire fire fire";
+     grid-area: p;
+     height: auto;
+     color: white;
+     display: grid;
+     grid-gap: 0%;
+     place-items: center;
+     grid-template-columns: repeat(12, 1fr);
+     grid-template-areas:
+         "et et et et et et et et et et et et"
+         "to to to to to to to to to to to to"
+         "tre tre tre tre tre tre tre tre tre tre tre tre"
+         "fire fire fire fire fire fire fire fire fire fire fire fire";
   }
 
   #praesentation {
