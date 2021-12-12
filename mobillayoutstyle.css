@@ -6,17 +6,51 @@ html, body {
 }
 
 a {
-color: white;
+color: #f2f2f2;
 }
 
-@media only screen and (min-width: 0px) {
+@media only screen and (min-width: 650px) {
+   .container > div {
+       display: flex;
+       justify-content: center;
+       align-items: center;
+       font-size: 2em;
+       color: #f2f2f2;
+       background-color: #232323;
+     }
+
+   .container > a {
+       display: flex;
+       justify-content: center;
+       align-items: center;
+       font-size: 2em;
+    }
+
+    .header {
+       font-family: 'Oswald', sans-serif;
+       font-weight: bold;
+       grid-area: h;
+       color: #f2f2f2;
+       height: 10px;
+    }
+    .container {
+        height: auto;
+        display: grid;
+        grid-gap: 0px;
+        place-items: center;
+        grid-template-columns: repeat(12, 1fr);
+        grid-template-areas:
+            ". . . h h h h h h . . .";
+      }
+}
+
+@media only screen and (max-width: 650px) {
   .header {
-     height: 100px;
      font-family: 'Oswald', sans-serif;
      font-weight: bold;
      grid-area: h;
-     color: white;
-     height: 80px;
+     color: #f2f2f2;
+     height: 100px;
   }
 
   .navigation {
@@ -30,7 +64,7 @@ color: white;
     white-space: nowrap;
     font-family: 'Oswald', sans-serif;
     font-weight: normal;
-    color: white;
+    color: #f2f2f2;
     background-color: #111111;
     padding-top: 4%;
     padding-bottom: 4%;
@@ -78,7 +112,7 @@ color: white;
      grid-area: prhe;
      font-family: 'Oswald', sans-serif;
      font-weight: bold;
-     font-size: 153%;
+     font-size: 55px;
      padding-left: 12%;
      padding-top: 20%;
      color: #F2CB05;
@@ -86,9 +120,9 @@ color: white;
 
   .praesentationstekst {
      grid-area: prte;
-     font-family: 'Roboto', sans-serif;
-     font-weight: bold;
-     font-size: 60%;
+     font-family: 'Oswald', sans-serif;
+     font-weight: normal;
+     font-size: 22px;
      color: #f2f2f2;
      padding-left: 12%;
      margin-bottom: 120px;
@@ -99,7 +133,6 @@ color: white;
     width: 100%;
     height: auto;
     object-fit: cover;
-     color: white;
   }
 
   .fotogalleribox {
@@ -112,7 +145,6 @@ color: white;
 
   .videoprojekt {
       width: 100%;
-      color: white;
       height: auto;
       object-fit: cover;
   }
@@ -129,7 +161,6 @@ color: white;
     width: 100%;
     height: auto;
     object-fit: cover;
-     color: white;
   }
 
   .neonskiltbox {
@@ -140,21 +171,49 @@ color: white;
     filter: blur(6px);
  }
 
-  .fire {
+  .movingartbox {
      grid-area: fire;
-     color: white;
+     color: #f2f2f2;
+  }
+
+  .movingart {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+  }
+
+  .movingart:hover {
+    filter: blur(6px);
   }
 
   .ctaheader {
      grid-area: ctahead;
+     font-weight: normal;
+     font-size: 55px;
+     margin-top: 10%;
   }
 
   .ctaparagraf {
     grid-area: ctapara;
+    font-size: 22px;
+    text-align:center;
+    margin-bottom: 10%;
   }
 
   .calltoactionknap {
     grid-area: ctabutt;
+    background-color: #F2CB05;
+    border: none;
+    text-align: center;
+    font-size: 25px;
+    margin-bottom: 15%;
+    cursor: pointer;
+    border-radius: 6px;
+    padding: 7% 22%
+  }
+
+  .ctabutton {
+    text-shadow: 2px 2px 4px black;
   }
 
   .footera {
@@ -176,7 +235,7 @@ color: white;
   #footer {
     grid-area: foot;
     display: grid;
-    color: white;
+    color: #f2f2f2;
     width: 100%;
     background-color: black;
     font-family: 'Roboto', sans-serif;
@@ -223,10 +282,11 @@ color: white;
 
   #ctatekst {
      grid-area: c;
+     font-family: 'Oswald', sans-serif;
      height: auto;
-     color: white;
+     color: #f2f2f2;
      display: grid;
-     height: 100%;
+     height: auto;
      grid-gap: 0%;;
      place-items: center;
      grid-template-columns: repeat(12, 1fr);
@@ -239,7 +299,7 @@ color: white;
   #projekter {
      grid-area: p;
      height: auto;
-     color: white;
+     color: #f2f2f2e;
      display: grid;
      grid-gap: 0%;
      place-items: center;
@@ -254,7 +314,7 @@ color: white;
   #praesentation {
      grid-area: o;
      height: auto;
-     color: white;
+     color: #f2f2f2;
      display: grid;
      height: 100%;
      grid-gap: 0%;
@@ -265,44 +325,4 @@ color: white;
          "pr pr pr pr pr pr prhe prhe prhe prhe prhe prhe"
          "pr pr pr pr pr pr prte prte prte prte prte prte";
   }
-}
-
-@media only screen and (min-width: 650px) {
-   .container > div {
-       display: flex;
-       justify-content: center;
-       align-items: center;
-       font-size: 2em;
-       color: white;
-       background-color: #232323;
-     }
-
-    .container {
-       height: 100%;
-       display: grid;
-       grid-gap: 2px;
-       place-items: center;
-       grid-template-columns: repeat(12, 1fr);
-       grid-template-areas:
-       "m m m h h h h h h j j j"
-       "hv hv hv hv hv hv hv hv hv hv hv hv"
-       "o o o o o o o o o o o o"
-       "p p p p p p p p p p p p"
-       "c c c c c c c c c c c c"
-       "f f f f f f f f f f f f";
- }
-//*
- .projekter {
-    grid-area: p;
-    color: white;
-    height: 200%;
-    display: grid;
-    grid-gap: 35%;
-    place-items: center;
-    grid-template-columns: repeat(12, 1fr);
-    grid-template-areas:
-        "et et et et et et to to to to to to"
-        "tre tre tre tre tre tre fire fire fire fire fire fire";
- }
- //*/
 }
