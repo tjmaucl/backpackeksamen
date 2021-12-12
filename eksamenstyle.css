@@ -1,0 +1,653 @@
+html, body {
+  font-style:
+  max-width: 1920px;
+  margin: auto;
+  background-color: #232323;
+}
+
+body * {
+	margin:          unset;
+	box-sizing:      unset;
+	padding:         unset;
+	font-size:       unset;
+	color:           unset;
+	text-decoration: unset;
+}
+
+a {
+color: #f2f2f2;
+}
+
+@media only screen and (min-width: 1000px) {
+  .container > div {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-size: 2em;
+  }
+
+  .container > a {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          font-size: 2em;
+  }
+
+  .header {
+     font-family: 'Oswald', sans-serif;
+     font-weight: bold;
+     grid-area: h;
+     color: #f2f2f2;
+     height: 120px;
+  }
+
+  .navigation {
+    top: 0;
+    max-width: 100%;
+    width: 75%;
+    height: auto;
+    grid-area: nav;
+    grid-gap: 5%;
+    white-space: nowrap;
+    font-family: 'Oswald', sans-serif;
+    font-weight: normal;
+    font-size: 2px;
+    color: #f2f2f2;
+  }
+
+  #logo {
+     grid-area: m;
+  }
+
+  #logosize {
+    margin: auto;
+    padding-top: 5px;
+    height: 120px;
+    width: 120px;
+}
+
+  #logofooter {
+     margin: auto;
+     height: 80px;
+     width: 80px;
+  }
+
+  .logofooterlink {
+    margin: auto;
+    grid-area: lofo;
+    height: 80px;
+    width: 80px;
+    align-content: center;
+    justify-content: center;
+  }
+
+  #profilbillede {
+     width: 180%;
+     object-fit: cover;
+     grid-area: pr;
+     margin-top: 10%;
+     padding-left: 25%;
+  }
+
+  #myVideo {
+    grid-area: hv;
+    max-width: 100%;
+    height: auto;
+    filter: brightness(0.8);
+
+  }
+
+  .fotogalleri {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+  }
+
+  .fotogalleribox {
+    grid-area: et;
+  }
+
+  .fotogalleri:hover {
+    filter: blur(6px);
+  }
+
+  .videoprojekt {
+      width: 100%;
+      height: auto;
+      object-fit: cover;
+  }
+
+  .videoprojektbox {
+      grid-area: to;
+  }
+
+  .videoprojektbox:hover {
+    filter: blur(6px);
+  }
+
+  .neon {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+  }
+
+  .neonskiltbox {
+     grid-area: tre;
+  }
+
+  .neonskiltbox:hover {
+    filter: blur(6px);
+ }
+
+  .movingartbox {
+     grid-area: fire;
+     color: #f2f2f2;
+  }
+
+  .movingart {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+  }
+
+  .movingart:hover {
+    filter: blur(6px);
+  }
+
+  .ctaheader {
+     grid-area: ctahead;
+     font-weight: normal;
+     font-size: 55px;
+     margin-top: 10%;
+     text-align: center;
+  }
+
+  .calltoactionknap {
+    grid-area: ctabutt;
+    background-color: #F2CB05;
+    border: none;
+    text-align: center;
+    font-size: 45px;
+    margin-top: 8%;
+    margin-bottom: 15%;
+    cursor: pointer;
+    border-radius: 6px;
+    padding: 2% 10%
+  }
+
+  .ctabutton {
+    text-shadow: 2px 2px 4px black;
+  }
+
+  .footera {
+    grid-area: foa;
+    padding-left: 6%;
+    padding-top: 4%;
+  }
+
+  .footerb {
+    grid-area: fob;
+    padding-left: 6%;
+  }
+
+  .linkedintekst {
+    grid-area: linkdin;
+    padding-left: 6%;
+    padding-bottom: 25px;
+  }
+
+  #footer {
+    grid-area: foot;
+    display: grid;
+    color: #f2f2f2;
+    width: 100%;
+    background-color: #111111;
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    height: auto;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-areas:
+        ". . . . . lofo lofo . . . . ."
+        "foa foa foa foa foa lofo lofo . . . . ."
+        "fob fob fob fob fob lofo lofo . . . . ."
+        "linkdin linkdin linkdin linkdin linkdin lofo lofo . . . . ."
+        ". . . . . lofo lofo . . . . .";
+  }
+
+  .container {
+      height: auto;
+      display: grid;
+      grid-gap: 0px;
+      place-items: center;
+      grid-template-columns: repeat(12, 1fr);
+      grid-template-areas:
+          ". m h . . . nav nav nav nav nav nav"
+          "hv hv hv hv hv hv hv hv hv hv hv hv"
+          "o o o o o o o o o o o o"
+          "p p p p p p p p p p p p"
+          "c c c c c c c c c c c c"
+          "foot foot foot foot foot foot foot foot foot foot foot foot";
+  }
+
+  #ctatekst {
+     grid-area: c;
+     font-family: 'Oswald', sans-serif;
+     color: #f2f2f2;
+     display: grid;
+     height: auto;
+     grid-gap: 0%;;
+     place-items: center;
+     grid-template-columns: repeat(12, 1fr);
+     grid-template-areas:
+         ". ctahead ctahead ctahead ctahead ctahead ctahead ctahead ctahead ctahead ctahead ."
+         ". . . ctabutt ctabutt ctabutt ctabutt ctabutt ctabutt . . .";
+  }
+
+  #projekter {
+     grid-area: p;
+     height: auto;
+     color: #f2f2f2e;
+     display: grid;
+     grid-gap: 0%;
+     place-items: center;
+     grid-template-columns: repeat(12, 1fr);
+     grid-template-areas:
+         "to to to to to to to to to to to to"
+         "et et et et et et et et et et et et"
+         "tre tre tre tre tre tre tre tre tre tre tre tre"
+         "fire fire fire fire fire fire fire fire fire fire fire fire";
+  }
+
+  #praesentation {
+     grid-area: o;
+     height: auto;
+     color: #f2f2f2;
+     display: grid;
+     height: 100%;
+     grid-gap: 0%;
+     place-items: center;
+     grid-template-columns: repeat(12, 1fr);
+     grid-template-areas:
+         "pr pr pr pr pr pr prhe prhe prhe prhe prhe prhe"
+         "pr pr pr pr pr pr prte prte prte prte prte prte"
+         "pr pr pr pr pr pr . . . . . .";
+  }
+
+  .praesentationsheader {
+     grid-area: prhe;
+     font-family: 'Oswald', sans-serif;
+     font-weight: bold;
+     font-size: 55px;
+     padding-right: 33%;
+     padding-top: 50%;
+     color: #F2CB05;
+     text-align: left;
+  }
+
+  .praesentationstekst {
+     grid-area: prte;
+     font-family: 'Oswald', sans-serif;
+     font-weight: normal;
+     font-size: 22px;
+     color: #f2f2f2;
+     text-align: left;
+     padding-left: 12%;
+     margin-bottom: 120px;
+     margin-right: 60px;
+  }
+}
+
+@media only screen and (max-width: 1000px) {
+  .container > div {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-size: 2em;
+  }
+
+  .container > a {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          font-size: 2em;
+  }
+
+  .header {
+     font-family: 'Oswald', sans-serif;
+     font-weight: bold;
+     grid-area: h;
+     color: #f2f2f2;
+     height: 100px;
+  }
+
+  .navigation {
+    position: sticky;
+    top: 0;
+    max-width: 100%;
+    width: 100%;
+    height: auto;
+    grid-area: nav;
+    grid-gap: 4%;
+    white-space: nowrap;
+    font-family: 'Oswald', sans-serif;
+    font-weight: normal;
+    color: #f2f2f2;
+    background-color: #111111;
+    padding-top: 4%;
+    padding-bottom: 4%;
+  }
+
+  #logo {
+     grid-area: m;
+  }
+
+  #logosize {
+    margin: auto;
+    padding-top: 5px;
+    height: 120px;
+    width: 120px;
+}
+
+  #logofooter {
+     margin: auto;
+     height: 75px;
+     width: 75px;
+     padding-top: 3%;
+  }
+
+  .logofooterlink {
+    margin: auto;
+    grid-area: lofo;
+    height: 80px;
+    width: 80px;
+    align-content: center;
+    justify-content: center;
+  }
+
+  #profilbillede {
+     width: 375%;
+     padding-left: 10%;
+     object-fit: cover;
+     grid-area: pr;
+     margin-top: 50%;
+     padding-left: 100px;
+  }
+
+  #myVideo {
+    grid-area: hv;
+    max-width: 100%;
+    height: auto;
+    filter: brightness(0.8);
+
+  }
+
+  .praesentationsheader {
+     grid-area: prhe;
+     font-family: 'Oswald', sans-serif;
+     font-weight: bold;
+     font-size: 57px;
+     text-align: left;
+     padding-left: 75%;
+     padding-top: 40%;
+     color: #F2CB05;
+  }
+
+  .praesentationstekst {
+     grid-area: prte;
+     font-family: 'Oswald', sans-serif;
+     font-weight: normal;
+     font-size: 22px;
+     color: #f2f2f2;
+     text-align: left;
+     padding-left: 66px;
+     margin-bottom: 60%;
+     margin-right: 30px;
+  }
+
+  .fotogalleri {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+  }
+
+  .fotogalleribox {
+    grid-area: et;
+  }
+
+  .videoprojekt {
+      width: 100%;
+      height: auto;
+      object-fit: cover;
+  }
+
+  .videoprojektbox {
+      grid-area: to;
+  }
+
+  .neon {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+  }
+
+  .neonskiltbox {
+     grid-area: tre;
+  }
+
+  .movingartbox {
+     grid-area: fire;
+     color: #f2f2f2;
+  }
+
+  .movingart {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+  }
+
+  .ctaheader {
+     grid-area: ctahead;
+     font-weight: normal;
+     font-size: 45px;
+     margin-top: 10%;
+     text-align: center;
+  }
+
+  .calltoactionknap {
+    grid-area: ctabutt;
+    background-color: #F2CB05;
+    border: none;
+    text-align: center;
+    font-size: 25px;
+    margin-top: 8%;
+    margin-bottom: 15%;
+    cursor: pointer;
+    border-radius: 6px;
+    padding: 7% 22%
+  }
+
+  .calltoactionknap:hover {
+    background-color: black;
+  }
+
+  .ctabutton {
+    text-shadow: 2px 2px 4px black;
+  }
+
+  .footera {
+    grid-area: foa;
+    padding-left: 6%;
+    padding-top: 4%;
+  }
+
+  .footerb {
+    grid-area: fob;
+    padding-left: 6%;
+  }
+
+  .linkedintekst {
+    grid-area: linkdin;
+    padding-left: 6%;
+  }
+
+  #footer {
+    grid-area: foot;
+    display: grid;
+    color: #f2f2f2;
+    width: 100%;
+    background-color: #111111;
+    font-family: 'Roboto', sans-serif;
+    font-size: 12px;
+    height: auto;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-areas:
+        ". . . . . lofo lofo . . . . ."
+        "foa foa foa foa foa lofo lofo . . . . ."
+        "fob fob fob fob fob lofo lofo . . . . ."
+        "linkdin linkdin linkdin linkdin linkdin lofo lofo . . . . ."
+        ". . . . . lofo lofo . . . . .";
+  }
+
+  .container {
+      height: auto;
+      display: grid;
+      grid-gap: 0px;
+      place-items: center;
+      grid-template-columns: repeat(12, 1fr);
+      grid-template-areas:
+          ". m m . . h h . . . . ."
+          "hv hv hv hv hv hv hv hv hv hv hv hv"
+          "nav nav nav nav nav nav nav nav nav nav nav nav"
+          "o o o o o o o o o o o o"
+          "p p p p p p p p p p p p"
+          "c c c c c c c c c c c c"
+          "foot foot foot foot foot foot foot foot foot foot foot foot";
+  }
+
+  #ctatekst {
+     grid-area: c;
+     font-family: 'Oswald', sans-serif;
+     height: auto;
+     color: #f2f2f2;
+     display: grid;
+     height: auto;
+     grid-gap: 0%;;
+     place-items: center;
+     grid-template-columns: repeat(12, 1fr);
+     grid-template-areas:
+         ". ctahead ctahead ctahead ctahead ctahead ctahead ctahead ctahead ctahead ctahead ."
+         ". . . ctabutt ctabutt ctabutt ctabutt ctabutt ctabutt . . .";
+  }
+
+  #projekter {
+     grid-area: p;
+     height: auto;
+     color: #f2f2f2e;
+     display: grid;
+     grid-gap: 0%;
+     place-items: center;
+     grid-template-columns: repeat(12, 1fr);
+     grid-template-areas:
+         "to to to to to to to to to to to to"
+         "et et et et et et et et et et et et"
+         "tre tre tre tre tre tre tre tre tre tre tre tre"
+         "fire fire fire fire fire fire fire fire fire fire fire fire";
+  }
+
+  #praesentation {
+     grid-area: o;
+     height: auto;
+     color: #f2f2f2;
+     display: grid;
+     height: 100%;
+     grid-gap: 0%;
+     margin-top: -20%;
+     place-items: center;
+     grid-template-columns: repeat(12, 1fr);
+     grid-template-areas:
+         "pr pr pr pr pr pr pr prhe . . . ."
+         "pr pr pr pr pr pr pr prte prte prte prte .";
+  }
+
+  .contaionerprojekterfooter {
+      height: auto;
+      display: grid;
+      grid-gap: 0px;
+      place-items: center;
+      grid-template-columns: repeat(12, 1fr);
+      grid-template-areas:
+          "foot foot foot foot foot foot foot foot foot foot foot foot";
+  }
+}
+
+box-sizing: border-box; {
+}
+
+ .overskrift {
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   font-family: 'Oswald', sans-serif;
+   font-weight: normal;
+   font-size: 300%;
+   color: #f2f2f2;
+   padding-top: 40px;
+}
+
+ .projekterblog {
+   display: flex;
+   align-items: center;
+   justify-content: center;
+ }
+
+ .blog {
+   width: 90%;
+ }
+
+ .projekttitel {
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   font-family: 'Oswald', sans-serif;
+   font-weight: normal;
+   font-size: 200%;
+   padding-bottom: 20px;
+   color: #f2f2f2;
+ }
+
+ /* Fake image */
+ .videoprojektblog {
+   width: 100%;
+ }
+
+ .movingartprojektblog {
+   width: 100%;
+ }
+
+ /* Add a card effect for articles */
+ .blogindlaeg {
+    padding: 20px;
+    margin-top: 80px;
+    background-color: #111111;
+    border: solid;
+    border-color: #f2f2f2;
+ }
+
+ .projektbeskrivelse {
+   font-family: 'Oswald', sans-serif;
+   margin-left: auto;
+   margin-right: auto;
+   width: 50%;
+   font-size: 115%;
+   padding-top: 10px;
+   padding-bottom: 10px;
+   color: #f2f2f2;
+}
+
+.projektblogbody {
+  margin-left: auto;
+  font-family: 'Roboto', sans-serif;
+    margin-right: auto;
+    width: 50%;
+    color: #f2f2f2;
+}
