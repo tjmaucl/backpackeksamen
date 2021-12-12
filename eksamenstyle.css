@@ -651,3 +651,17 @@ box-sizing: border-box; {
     width: 50%;
     color: #f2f2f2;
 }
+
+.sprite {
+	width: 500px;
+	height: 1000px;
+	background: url('billeder/fireworkanimation-01.png') 0 0 no-repeat;
+	animation: play 1s steps(11) infinite;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+@keyframes play {
+	0%{background-position:0px;}
+   100% { background-position: -5500px; }
+}
