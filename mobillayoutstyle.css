@@ -10,6 +10,20 @@ color: #f2f2f2;
 }
 
 @media only screen and (min-width: 1000px) {
+  .container > div {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-size: 2em;
+  }
+
+  .container > a {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          font-size: 2em;
+  }
+
   .header {
      font-family: 'Oswald', sans-serif;
      font-weight: bold;
@@ -33,11 +47,15 @@ color: #f2f2f2;
   }
 
   #logo {
-     margin: auto;
      grid-area: m;
-     height: 120px;
-     width: 120px;
   }
+
+  #logosize {
+    margin: auto;
+    padding-top: 5px;
+    height: 120px;
+    width: 120px;
+}
 
   #logofooter {
      margin: auto;
@@ -55,11 +73,11 @@ color: #f2f2f2;
   }
 
   #profilbillede {
-     width: 225%;
-     padding-left: 40%;
+     width: 180%;
      object-fit: cover;
      grid-area: pr;
-     margin-top: 12%;
+     margin-top: 10%;
+     padding-left: 25%;
   }
 
   #myVideo {
@@ -68,28 +86,6 @@ color: #f2f2f2;
     height: auto;
     filter: brightness(0.8);
 
-  }
-
-  .praesentationsheader {
-     grid-area: prhe;
-     font-family: 'Oswald', sans-serif;
-     font-weight: bold;
-     font-size: 55px;
-     padding-left: 12%;
-     padding-top: 20%;
-     color: #F2CB05;
-     text-align: left;
-  }
-
-  .praesentationstekst {
-     grid-area: prte;
-     font-family: 'Oswald', sans-serif;
-     font-weight: normal;
-     font-size: 22px;
-     color: #f2f2f2;
-     padding-left: 12%;
-     margin-bottom: 120px;
-     margin-right: 60px;
   }
 
   .fotogalleri {
@@ -154,14 +150,7 @@ color: #f2f2f2;
      font-weight: normal;
      font-size: 55px;
      margin-top: 10%;
-  }
-
-  .ctaparagraf {
-    grid-area: ctapara;
-    font-family: roboto;
-    font-size: 22px;
-    text-align:center;
-    margin-bottom: 10%;
+     text-align: center;
   }
 
   .calltoactionknap {
@@ -169,11 +158,11 @@ color: #f2f2f2;
     background-color: #F2CB05;
     border: none;
     text-align: center;
-    font-size: 25px;
+    font-size: 55px;
     margin-bottom: 15%;
     cursor: pointer;
     border-radius: 6px;
-    padding: 7% 22%
+    padding: 2% 10%
   }
 
   .ctabutton {
@@ -212,21 +201,7 @@ color: #f2f2f2;
         "foa foa foa foa foa lofo lofo . . . . ."
         "fob fob fob fob fob lofo lofo . . . . ."
         "linkdin linkdin linkdin linkdin linkdin lofo lofo . . . . ."
-        ". . . . . lofo lofo . . . . ."
-  }
-
-  .container > div {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      font-size: 2em;
-  }
-
-  .container > a {
-          display: flex;
-          justify-content: center;
-          align-items: center;
-          font-size: 2em;
+        ". . . . . lofo lofo . . . . .";
   }
 
   .container {
@@ -247,7 +222,6 @@ color: #f2f2f2;
   #ctatekst {
      grid-area: c;
      font-family: 'Oswald', sans-serif;
-     height: auto;
      color: #f2f2f2;
      display: grid;
      height: auto;
@@ -256,7 +230,6 @@ color: #f2f2f2;
      grid-template-columns: repeat(12, 1fr);
      grid-template-areas:
          ". ctahead ctahead ctahead ctahead ctahead ctahead ctahead ctahead ctahead ctahead ."
-         ". ctapara ctapara ctapara ctapara ctapara ctapara ctapara ctapara ctapara ctapara ."
          ". . . ctabutt ctabutt ctabutt ctabutt ctabutt ctabutt . . .";
   }
 
@@ -282,16 +255,53 @@ color: #f2f2f2;
      display: grid;
      height: 100%;
      grid-gap: 0%;
-     margin-top: -20%;
      place-items: center;
      grid-template-columns: repeat(12, 1fr);
      grid-template-areas:
          "pr pr pr pr pr pr prhe prhe prhe prhe prhe prhe"
-         "pr pr pr pr pr pr prte prte prte prte prte prte";
+         "pr pr pr pr pr pr prte prte prte prte prte prte"
+         "pr pr pr pr pr pr . . . . . .";
+  }
+
+  .praesentationsheader {
+     grid-area: prhe;
+     font-family: 'Oswald', sans-serif;
+     font-weight: bold;
+     font-size: 55px;
+     padding-right: 25%;
+     padding-top: 25%;
+     color: #F2CB05;
+     text-align: left;
+  }
+
+  .praesentationstekst {
+     grid-area: prte;
+     font-family: 'Oswald', sans-serif;
+     font-weight: normal;
+     font-size: 22px;
+     color: #f2f2f2;
+     text-align: left;
+     padding-left: 12%;
+     margin-bottom: 120px;
+     margin-right: 60px;
   }
 }
 
 @media only screen and (max-width: 1000px) {
+  .container > div {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-size: 2em;
+  }
+
+  .container > a {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          font-size: 2em;
+  }
+
   .header {
      font-family: 'Oswald', sans-serif;
      font-weight: bold;
@@ -318,11 +328,15 @@ color: #f2f2f2;
   }
 
   #logo {
-     margin: auto;
      grid-area: m;
-     height: 80px;
-     width: 80px;
   }
+
+  #logosize {
+    margin: auto;
+    padding-top: 5px;
+    height: 120px;
+    width: 120px;
+}
 
   #logofooter {
      margin: auto;
@@ -340,11 +354,11 @@ color: #f2f2f2;
   }
 
   #profilbillede {
-     width: 225%;
+     width: 250%;
      padding-left: 40%;
      object-fit: cover;
      grid-area: pr;
-     margin-top: 12%;
+     margin-top: 34%;
   }
 
   #myVideo {
@@ -359,8 +373,9 @@ color: #f2f2f2;
      grid-area: prhe;
      font-family: 'Oswald', sans-serif;
      font-weight: bold;
-     font-size: 55px;
-     padding-left: 12%;
+     font-size: 62px;
+     text-align: left;
+     padding-left: 25%;
      padding-top: 20%;
      color: #F2CB05;
   }
@@ -371,7 +386,8 @@ color: #f2f2f2;
      font-weight: normal;
      font-size: 22px;
      color: #f2f2f2;
-     padding-left: 12%;
+     text-align: left;
+     padding-left: 25%;
      margin-bottom: 120px;
      margin-right: 60px;
   }
@@ -386,10 +402,6 @@ color: #f2f2f2;
     grid-area: et;
   }
 
-  .fotogalleri:hover {
-    filter: blur(6px);
-  }
-
   .videoprojekt {
       width: 100%;
       height: auto;
@@ -398,10 +410,6 @@ color: #f2f2f2;
 
   .videoprojektbox {
       grid-area: to;
-  }
-
-  .videoprojektbox:hover {
-    filter: blur(6px);
   }
 
   .neon {
@@ -414,10 +422,6 @@ color: #f2f2f2;
      grid-area: tre;
   }
 
-  .neonskiltbox:hover {
-    filter: blur(6px);
- }
-
   .movingartbox {
      grid-area: fire;
      color: #f2f2f2;
@@ -429,23 +433,12 @@ color: #f2f2f2;
     object-fit: cover;
   }
 
-  .movingart:hover {
-    filter: blur(6px);
-  }
-
   .ctaheader {
      grid-area: ctahead;
      font-weight: normal;
      font-size: 55px;
      margin-top: 10%;
-  }
-
-  .ctaparagraf {
-    grid-area: ctapara;
-    font-family: Roboto;
-    font-size: 22px;
-    text-align:center;
-    margin-bottom: 10%;
+     text-align: center;
   }
 
   .calltoactionknap {
@@ -498,20 +491,6 @@ color: #f2f2f2;
         ". . . . . lofo lofo . . . . ."
   }
 
-  .container > div {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      font-size: 2em;
-  }
-
-  .container > a {
-          display: flex;
-          justify-content: center;
-          align-items: center;
-          font-size: 2em;
-  }
-
   .container {
       height: auto;
       display: grid;
@@ -540,7 +519,6 @@ color: #f2f2f2;
      grid-template-columns: repeat(12, 1fr);
      grid-template-areas:
          ". ctahead ctahead ctahead ctahead ctahead ctahead ctahead ctahead ctahead ctahead ."
-         ". ctapara ctapara ctapara ctapara ctapara ctapara ctapara ctapara ctapara ctapara ."
          ". . . ctabutt ctabutt ctabutt ctabutt ctabutt ctabutt . . .";
   }
 
