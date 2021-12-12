@@ -665,3 +665,59 @@ box-sizing: border-box; {
 	0%{background-position:0px;}
    100% { background-position: -5500px; }
 }
+
+.neon {
+  font-family: Brush Script MT, cursive;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: auto;
+  margin-right: auto;
+  font-size: 1000%;
+  height: 500px;
+  text-shadow:
+   0 0 0.125em white,
+   0 0 0.60em white;
+   animation: glow 1s ease-in-out infinite;
+   animation-name: neonanimation;
+   animation-duration: 4s;
+   animation-iteration-count: infinite;
+}
+
+@keyframes neonanimation {
+  0% {
+    transform: style;
+    color: grey;
+    text-shadow:
+     0 0 black,
+     0 0 black;
+  }
+  10% {
+    transform: style;
+    color: white;
+    text-shadow:
+     0 0 0.140em white,
+     0 0 0.8em white;
+  }
+  97% {
+    transform: style;
+    color: white;
+    text-shadow:
+     0 0 0.120em white,
+     0 0 0.4em white;
+  }
+  99% {
+    transform: style;
+    color: grey;
+    text-shadow:
+     0 0 black,
+     0 0 black;
+  }
+  100% {
+    transform: style;
+    text-shadow:
+     0 0 0.140em white,
+     0 0 0.8em white;
+  }
+}
