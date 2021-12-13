@@ -82,7 +82,7 @@ color: #f2f2f2;
   }
 
   #profilbillede {
-     width: 180%;
+     width: 100%;
      object-fit: cover;
      grid-area: pr;
      margin-top: 10%;
@@ -207,7 +207,7 @@ color: #f2f2f2;
       place-items: center;
       grid-template-columns: repeat(12, 1fr);
       grid-template-areas:
-          ". m h . . . . nav nav nav nav nav"
+          ". m h . . . . nav nav nav nav ."
           "hv hv hv hv hv hv hv hv hv hv hv hv"
           "o o o o o o o o o o o o"
           "p p p p p p p p p p p p"
@@ -350,7 +350,7 @@ color: #f2f2f2;
   }
 
   #profilbillede {
-     width: 375%;
+     width: 248%;
      padding-left: 10%;
      object-fit: cover;
      grid-area: pr;
