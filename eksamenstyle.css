@@ -587,11 +587,21 @@ box-sizing: border-box; {
  }
 
  .videoprojektblog {
-   width: 100%;
+   width: 65%;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   margin-left: auto;
+   margin-right: auto;
  }
 
  .movingartprojektblog {
-   width: 100%;
+   width: 50%;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   margin-left: auto;
+   margin-right: auto;
  }
 
  .blogindlaeg {
@@ -626,6 +636,12 @@ box-sizing: border-box; {
 	animation: play 1s steps(11) infinite;
   margin-left: auto;
   margin-right: auto;
+}
+
+@media only screen and (max-width: 500px) {
+  .sprite {
+    width: 410px;
+ }
 }
 
 @keyframes play {
@@ -749,11 +765,58 @@ box-sizing: border-box; {
   margin-right: auto;
 }
 
-.kompeencegrid {
-  display: grid;
-  display: grid;
-  grid-gap: 0px;
-  margin-left: auto;
-  margin-right: auto;
-  grid-template-columns: repeat(12, 1fr);
-  grid-template-areas:
+.blogindlaegvideoommig {
+  background-color: #111111;
+  padding-bottom: 20px;
+}
+
+.kompetencegrid {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  grid-gap: 4%;
+  background-color: #111111;
+  padding-bottom: 5%;
+}
+
+.adobeanimate {
+  grid-area: adan;
+  width: 6%;
+  height: auto;
+}
+
+.adobepremier {
+  grid-area: adpr;
+  width: 6%;
+  height: auto;
+}
+
+.adobelight {
+  grid-area: adli;
+  width: 6%;
+  height: auto;
+}
+
+.adobephoto {
+  grid-area: adph;
+  width: 6%;
+  height: auto;
+}
+
+.adobeill {
+  grid-area: adil;
+  width: 6%;
+  height: auto;
+}
+
+.adobeind {
+  grid-area: adin;
+  width: 6%;
+  height: auto;
+}
+
+.adobexd {
+  grid-area: adxd;
+  width: 6%;
+  height: auto;
+}
