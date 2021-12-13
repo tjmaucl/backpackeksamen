@@ -561,7 +561,9 @@ box-sizing: border-box; {
    font-weight: normal;
    font-size: 300%;
    color: #f2f2f2;
-   padding-top: 40px;
+   padding-top: 30px;
+   padding-bottom: 30px;
+   background-color: #111111;
 }
 
  .projekterblog {
@@ -606,7 +608,7 @@ box-sizing: border-box; {
 
  .blogindlaeg {
     padding: 20px;
-    margin-top: 80px;
+    margin-top: 40px;
     background-color: #111111;
  }
 
@@ -774,49 +776,50 @@ box-sizing: border-box; {
   display: flex;
   justify-content: center;
   align-items: center;
-  grid-gap: 4%;
+  grid-gap: 2.5%;
   background-color: #111111;
-  padding-bottom: 5%;
+  padding-top: 15px;
+  margin-bottom: 30px;
 }
 
 .adobeanimate {
   grid-area: adan;
-  width: 6%;
+  width: 5%;
   height: auto;
 }
 
 .adobepremier {
   grid-area: adpr;
-  width: 6%;
+  width: 5%;
   height: auto;
 }
 
 .adobelight {
   grid-area: adli;
-  width: 6%;
+  width: 5%;
   height: auto;
 }
 
 .adobephoto {
   grid-area: adph;
-  width: 6%;
+  width: 5%;
   height: auto;
 }
 
 .adobeill {
   grid-area: adil;
-  width: 6%;
+  width: 5%;
   height: auto;
 }
 
 .adobeind {
   grid-area: adin;
-  width: 6%;
+  width: 5%;
   height: auto;
 }
 
 .adobexd {
   grid-area: adxd;
-  width: 6%;
+  width: 5%;
   height: auto;
 }
