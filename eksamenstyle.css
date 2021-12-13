@@ -125,20 +125,6 @@ color: #f2f2f2;
     filter: blur(6px);
   }
 
-  .neonforside {
-    width: 100%;
-    height: auto;
-    object-fit: cover;
-  }
-
-  .neonskiltbox {
-     grid-area: tre;
-  }
-
-  .neonskiltbox:hover {
-    filter: blur(6px);
- }
-
   .movingartbox {
      grid-area: fire;
      color: #f2f2f2;
@@ -254,7 +240,6 @@ color: #f2f2f2;
      grid-template-areas:
          "to to to to to to to to to to to to"
          "et et et et et et et et et et et et"
-         "tre tre tre tre tre tre tre tre tre tre tre tre"
          "fire fire fire fire fire fire fire fire fire fire fire fire";
   }
 
@@ -424,16 +409,6 @@ color: #f2f2f2;
       grid-area: to;
   }
 
-  .neonforside {
-    width: 100%;
-    height: auto;
-    object-fit: cover;
-  }
-
-  .neonskiltbox {
-     grid-area: tre;
-  }
-
   .movingartbox {
      grid-area: fire;
      color: #f2f2f2;
@@ -464,10 +439,6 @@ color: #f2f2f2;
     cursor: pointer;
     border-radius: 6px;
     padding: 7% 22%
-  }
-
-  .calltoactionknap:hover {
-    background-color: black;
   }
 
   .ctabutton {
@@ -550,7 +521,6 @@ color: #f2f2f2;
      grid-template-areas:
          "to to to to to to to to to to to to"
          "et et et et et et et et et et et et"
-         "tre tre tre tre tre tre tre tre tre tre tre tre"
          "fire fire fire fire fire fire fire fire fire fire fire fire";
   }
 
@@ -750,4 +720,24 @@ box-sizing: border-box; {
   grid-template-areas:
       ". bill1 bill1 bill1 bill1 bill1 bill4 bill4 bill4 bill4 bill4 ."
       ". bill3 bill3 bill3 bill3 bill3 bill2 bill2 bill2 bill2 bill2 .";
+}
+
+.forsideknap:hover {
+  color: #F2CB05;
+}
+
+.projekterknap:hover {
+  color: #F2CB05;
+}
+
+.ommigknap:hover {
+  color: #F2CB05;
+}
+
+.kontaktknap:hover {
+  color: #F2CB05;
+}
+
+.calltoactionknap:hover {
+  background-color: #BFA000;
 }
