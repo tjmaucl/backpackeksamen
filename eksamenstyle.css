@@ -659,7 +659,7 @@ box-sizing: border-box; {
   align-items: center;
   margin-left: auto;
   margin-right: auto;
-  font-size: 350%;
+  font-size: 650%;
   height: 200px;
   text-shadow:
    0 0 0.125em white,
@@ -705,6 +705,12 @@ box-sizing: border-box; {
      0 0 0.140em white,
      0 0 0.8em white;
   }
+}
+
+@media only screen and (max-width: 1000px) {
+  .neon {
+    font-size: 350%;
+ }
 }
 
 .billede1 {
@@ -821,5 +827,15 @@ box-sizing: border-box; {
 .adobexd {
   grid-area: adxd;
   width: 5%;
+  height: auto;
+}
+
+.kontakticoner {
+  text-align: center;
+  padding-top: 25px;
+}
+
+.iconlinks {
+  width: 26.5%;
   height: auto;
 }
