@@ -639,7 +639,7 @@ box-sizing: border-box; {
   margin-right: auto;
 }
 
-@media only screen and (max-width: 500px) {
+@media only screen and (max-width: 600px) {
   .sprite {
     width: 410px;
  }
