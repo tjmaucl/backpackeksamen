@@ -596,6 +596,15 @@ box-sizing: border-box; {
    margin-right: auto;
  }
 
+ #undervandetblog {
+   width: 50%;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   margin-left: auto;
+   margin-right: auto;
+ }
+
  .blogindlaeg {
     padding: 20px;
     margin-top: 40px;
@@ -723,6 +732,26 @@ box-sizing: border-box; {
   width: 100%;
 }
 
+.billede5 {
+  grid-area: bill5;
+  width: 100%;
+}
+
+.billede6 {
+  grid-area: bill6;
+  width: 100%;
+}
+
+.billede7 {
+  grid-area: bill7;
+  width: 100%;
+}
+
+.billede8 {
+  grid-area: bill8;
+  width: 100%;
+}
+
 #galleriprojekt {
   display: grid;
   grid-gap: 0px;
@@ -730,8 +759,10 @@ box-sizing: border-box; {
   margin-right: auto;
   grid-template-columns: repeat(12, 1fr);
   grid-template-areas:
-      ". bill1 bill1 bill1 bill1 bill1 bill4 bill4 bill4 bill4 bill4 ."
-      ". bill3 bill3 bill3 bill3 bill3 bill2 bill2 bill2 bill2 bill2 .";
+      ". bill1 bill1 bill1 bill1 bill1 bill2 bill2 bill2 bill2 bill2 ."
+      ". bill3 bill3 bill3 bill3 bill3 bill4 bill4 bill4 bill4 bill4 ."
+      ". bill5 bill5 bill5 bill5 bill5 bill6 bill6 bill6 bill6 bill6 ."
+      ". bill7 bill7 bill7 bill7 bill7 bill8 bill8 bill8 bill8 bill8 .";
 }
 
 .forsideknap:hover {
