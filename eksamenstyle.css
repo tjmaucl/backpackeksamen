@@ -1,8 +1,11 @@
 html, body {
   font-style:
-  max-width: 1920px;
   margin: auto;
   background-color: #232323;
+}
+
+html {
+  max-width: 2000px;
 }
 
 body * {
@@ -276,14 +279,14 @@ color: #f2f2f2;
       display: flex;
       justify-content: center;
       align-items: center;
-      font-size: 2em;
+      font-size: 1.4em;
   }
 
   .container > a {
           display: flex;
           justify-content: center;
           align-items: center;
-          font-size: 2em;
+          font-size: 1.4em;
   }
 
   .header {
@@ -318,8 +321,8 @@ color: #f2f2f2;
   #logosize {
     margin: auto;
     padding-top: 5px;
-    height: 120px;
-    width: 120px;
+    height: 100%;
+    width: 100%;
 }
 
   #logofooter {
@@ -343,7 +346,7 @@ color: #f2f2f2;
      padding-left: 10%;
      object-fit: cover;
      grid-area: pr;
-     margin-top: 50%;
+     margin-top: 230px;
      padding-left: 100px;
   }
 
@@ -641,7 +644,7 @@ box-sizing: border-box; {
 
 @media only screen and (max-width: 600px) {
   .sprite {
-    width: 410px;
+    width: 100%;
  }
 }
 
@@ -651,7 +654,7 @@ box-sizing: border-box; {
 }
 
 .neon {
-  font-family: Brush Script MT, cursive;
+  font-family: 'Oswald', sans-serif;;
   color: white;
   display: flex;
   justify-content: center;
@@ -708,7 +711,7 @@ box-sizing: border-box; {
 
 @media only screen and (max-width: 1000px) {
   .neon {
-    font-size: 350%;
+    font-size: 200%;
  }
 }
 
