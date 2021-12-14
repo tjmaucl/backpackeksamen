@@ -107,10 +107,6 @@ color: #f2f2f2;
     grid-area: et;
   }
 
-  .fotogalleri:hover {
-    filter: blur(6px);
-  }
-
   .videoprojekt {
       width: 100%;
       height: auto;
@@ -121,23 +117,16 @@ color: #f2f2f2;
       grid-area: to;
   }
 
-  .videoprojektbox:hover {
-    filter: blur(6px);
-  }
-
   .movingartbox {
      grid-area: fire;
      color: #f2f2f2;
+     width: 100%;
   }
 
   .movingart {
     width: 100%;
     height: auto;
     object-fit: cover;
-  }
-
-  .movingart:hover {
-    filter: blur(6px);
   }
 
   .ctaheader {
@@ -153,12 +142,12 @@ color: #f2f2f2;
     background-color: #F2CB05;
     border: none;
     text-align: center;
-    font-size: 45px;
+    font-size: 30px;
     margin-top: 8%;
     margin-bottom: 15%;
     cursor: pointer;
     border-radius: 6px;
-    padding: 2% 10%
+    padding: 3% 6%
   }
 
   .ctabutton {
@@ -433,12 +422,12 @@ color: #f2f2f2;
     background-color: #F2CB05;
     border: none;
     text-align: center;
-    font-size: 25px;
+    font-size: 30px;
     margin-top: 8%;
     margin-bottom: 15%;
     cursor: pointer;
     border-radius: 6px;
-    padding: 7% 22%
+    padding: 3% 6%
   }
 
   .ctabutton {
@@ -588,7 +577,7 @@ box-sizing: border-box; {
    color: #f2f2f2;
  }
 
- .videoprojektblog {
+ #videoprojektblog {
    width: 65%;
    display: flex;
    justify-content: center;
@@ -597,7 +586,7 @@ box-sizing: border-box; {
    margin-right: auto;
  }
 
- .movingartprojektblog {
+ #movingartprojektblog {
    width: 50%;
    display: flex;
    justify-content: center;
@@ -785,6 +774,7 @@ box-sizing: border-box; {
   grid-gap: 2.5%;
   background-color: #111111;
   padding-top: 15px;
+  padding-bottom: 30px;
   margin-bottom: 30px;
 }
 
@@ -832,10 +822,32 @@ box-sizing: border-box; {
 
 .kontakticoner {
   text-align: center;
-  padding-top: 25px;
+  padding-top: 35px;
 }
 
 .iconlinks {
-  width: 26.5%;
+  width: 13%;
   height: auto;
+}
+
+.projektbeskrivelsekontakt {
+  text-align: center;
+  font-family: 'Oswald', sans-serif;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 65%;
+  font-size: 155%;
+  padding-top: 3%;
+  padding-bottom: 10px;
+  color: #f2f2f2;
+}
+
+.projektblogbodykontakt {
+  text-align: center;
+  margin-left: auto;
+  font-family: 'Roboto', sans-serif;
+    margin-right: auto;
+    width: 50%;
+    color: #f2f2f2;
+    background-color: #111111;
 }
