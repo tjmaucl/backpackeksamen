@@ -8,12 +8,12 @@ html {
 }
 
 body * {
+  color:           unset;
 	margin:          unset;
-	box-sizing:      unset;
-	padding:         unset;
+  text-decoration: unset;
 	font-size:       unset;
-	color:           unset;
-	text-decoration: unset;
+  box-sizing:      unset;
+  padding:         unset;
 }
 
 a {
