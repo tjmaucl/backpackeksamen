@@ -1,11 +1,10 @@
 html, body {
-  font-style:
-  margin: auto;
+  ;margin: auto;
   background-color: #232323;
 }
 
 html {
-  max-width: 2000px;
+  max-width: 1920px;
 }
 
 body * {
@@ -224,7 +223,7 @@ color: #f2f2f2;
   #projekter {
      grid-area: p;
      height: auto;
-     color: #f2f2f2e;
+     color: #f2f2f2;
      display: grid;
      grid-gap: 0%;
      place-items: center;
@@ -506,7 +505,7 @@ color: #f2f2f2;
   #projekter {
      grid-area: p;
      height: auto;
-     color: #f2f2f2e;
+     color: #f2f2f2;
      display: grid;
      grid-gap: 0%;
      place-items: center;
@@ -541,9 +540,6 @@ color: #f2f2f2;
       grid-template-areas:
           "foot foot foot foot foot foot foot foot foot foot foot foot";
   }
-}
-
-box-sizing: border-box; {
 }
 
  .overskrift {
@@ -674,35 +670,30 @@ box-sizing: border-box; {
 
 @keyframes neonanimation {
   0% {
-    transform: style;
     color: grey;
     text-shadow:
      0 0 black,
      0 0 black;
   }
   10% {
-    transform: style;
     color: white;
     text-shadow:
      0 0 0.140em white,
      0 0 0.8em white;
   }
   97% {
-    transform: style;
     color: white;
     text-shadow:
      0 0 0.120em white,
      0 0 0.4em white;
   }
   99% {
-    transform: style;
     color: grey;
     text-shadow:
      0 0 black,
      0 0 black;
   }
   100% {
-    transform: style;
     text-shadow:
      0 0 0.140em white,
      0 0 0.8em white;
